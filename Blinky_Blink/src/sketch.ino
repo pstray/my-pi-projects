@@ -24,5 +24,5 @@ void loop() {
     dir = 1;
     pwm = 1;
   }
-  delay(100);
+  delay(10);
 }
