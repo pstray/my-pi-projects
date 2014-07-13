@@ -14,7 +14,8 @@ void setup() {
 }
 
 void loop() {
-  analogWrite(led, pwm);
+  digitalgWrite(led, HIGH);
+  delay(pwm)
   pwm += dir;
   if (pwm>255) {
     dir = -1;
@@ -24,5 +25,6 @@ void loop() {
     dir = 1;
     pwm = 1;
   }
-  delay(10);
+  digitalgWrite(led, LOW);
+  delay(255-pwm)
 }
